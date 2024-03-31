@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefans Dashboard</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Klockan och datum-->
+    <div class="home">
+        <div class="content-wrapper">
+            <div id="timeContainer">
+                <div id="timeDate"></div>
+            </div>
+
+            <div class="title">
+                <h1 id="title">Stefan Johansson Dashboard</h1>
+            </div>
+
+            <div class="container">
+                <div class="box" id="box1">
+                    <h4>Snabblänkar</h4>
+                    <div class="quickLinks">
+                        <div class="link">
+                            <a href="https://chat.openai.com/" target="_blank"> <img src="./image/chatGPT.png" alt="" style="max-width: 20px; max-height: 17px;"> ChatGPT</a>
+                            <button class="removeLink">-</button>
+                        </div>
+                        <div class="link">
+                            <a href="https://se.linkedin.com/" class="fab fa-linkedin" target="_blank"> LinkedIn</a>
+                            <button class="removeLink">-</button>
+                        </div>
+                        <div class="link">
+                            <a href="https://chat.openai.com/" class="fab fa-github" target="_blank"> GitHub</a>
+                            <button class="removeLink">-</button>
+                        </div>
+                    </div>
+                    <br>
+                    <button id="addLink" class="link">+ Lägg till länk</button>
+                </div>
+    
+                    
+
+
+
+
+
+                <div class="box" id="box2"><h4>Dagens väder</h4>
+                    <div class="search-box">
+                        <box-icon name='map' type='solid' ></box-icon>
+                    <input type="text" placeholder="Enter your location">
+                    <button class="search"><box-icon name='search'></box-icon></button>
+                </div>
+                <div class="card" style="display: none">
+                    <h2 class="cityDisplay">Varberg</h2>
+                    <p class="tempDisplay">16°C</p>
+                    <p class="weatherEmoji">☀️</p>
+                    <p class="descDisplay">Sunny</p>
+                    
+                    <p class="windDisplay">4 m/s</p>
+                    <p class="errorDisplay">Please enter a city</p>
+                </div>
+
+
+
+                </div>
+                <div class="box" id="box3">
+                    <h4>Chuck Norris Jokes</h4>
+                    <div id="jokeContainer"></div>
+                    <button id="randomJokeButton">Slumpa nytt skämt</button>
+                </div>
+                
+                
+                
+                    <div class="box" id="box4"><h4>Anteckningar</h4>
+                    <textarea id="notes" class="notes-textarea"></textarea>
+                </div>
+            </div>
+            <button id="backgroundButton">↻ Slumpa ny bakgrund</button>
+        </div>
+
+        
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
